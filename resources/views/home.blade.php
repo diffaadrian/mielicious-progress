@@ -49,8 +49,21 @@
                 <div class="card-body">
                     <div class="d-flex align-items-center justify-content-between justify-content-md-center justify-content-xl-between flex-wrap mb-4">
                         <div>
-                            <p class="mb-2 text-md-center text-lg-left">BoM</p>
+                            <p class="mb-2 text-md-center text-lg-left">BOM</p>
                             <h1 class="mb-0">{{$data['boms']}}</h1>
+                        </div>
+                        <i class="typcn typcn-chart-pie icon-xl text-secondary"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between justify-content-md-center justify-content-xl-between flex-wrap mb-4">
+                        <div>
+                            <p class="mb-2 text-md-center text-lg-left">VENDOR</p>
+                            <h1 class="mb-0">{{$data['vendors']}}</h1>
                         </div>
                         <i class="typcn typcn-chart-pie icon-xl text-secondary"></i>
                     </div>

@@ -55,3 +55,11 @@ Route::post('/bom/store', 'Core\BomController@store')->name('bom.store');
 Route::get('/bom/edit/{id}', 'Core\BomController@edit')->name('bom.edit');
 Route::patch('/bom/update/{id}', 'Core\BomController@update')->name('bom.update');
 Route::get('/bom/delete/{id}', 'Core\BomController@delete')->name('bom.delete');
+
+// Vendor
+Route::get('/vendor', 'Core\VendorController@index')->name('vendor.index');
+Route::get('/vendor/create', 'Core\VendorController@create')->name('vendor.create');
+Route::post('/vendor/store', 'Core\VendorController@store')->name('vendor.store');
+Route::get('/vendor/edit/{id}', 'Core\VendorController@edit')->name('vendor.edit');
+Route::patch('/vendor/update/{id}', 'Core\VendorController@update')->name('vendor.update');
+Route::get('/vendor/delete/{id}', 'Core\VendorController@delete')->name('vendor.delete');
