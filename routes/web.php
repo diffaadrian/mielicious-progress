@@ -47,3 +47,11 @@ Route::post('/production/store', 'Core\ProductionController@store')->name('produ
 Route::get('/production/edit/{id}', 'Core\ProductionController@edit')->name('production.edit');
 Route::patch('/production/update/{id}', 'Core\ProductionController@update')->name('production.update');
 Route::get('/production/delete/{id}', 'Core\ProductionController@delete')->name('production.delete');
+
+// BoM
+Route::get('/bom', 'Core\BomController@index')->name('bom.index');
+Route::get('/bom/create', 'Core\BomController@create')->name('bom.create');
+Route::post('/bom/store', 'Core\BomController@store')->name('bom.store');
+Route::get('/bom/edit/{id}', 'Core\BomController@edit')->name('bom.edit');
+Route::patch('/bom/update/{id}', 'Core\BomController@update')->name('bom.update');
+Route::get('/bom/delete/{id}', 'Core\BomController@delete')->name('bom.delete');

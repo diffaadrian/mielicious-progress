@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Material;
 use App\Models\Product;
 use App\Models\Production;
+use App\Models\Bom;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -24,7 +25,8 @@ class DashboardController extends Controller
         $products = Product::count();
         $materials = Material::count();
         $productions = Production::count();
-        $data = ['materials' => $materials, 'products' => $products, 'productions' => $productions];
+        $boms = Bom::count();
+        $data = ['materials' => $materials, 'products' => $products, 'productions' => $productions, 'boms' => $boms];
         // dd($data);
         return view('home')->with('data', $data);
     }

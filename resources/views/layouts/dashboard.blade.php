@@ -105,6 +105,12 @@
               <span class="menu-title">Produksi</span>
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{route("bom.index")}}">
+              <i class="mdi mdi-library-books menu-icon"></i>
+              <span class="menu-title">BoM</span>
+            </a>
+          </li>
           {{-- <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <i class="typcn typcn-document-text menu-icon"></i>
