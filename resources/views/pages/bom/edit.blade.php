@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-xl-6 grid-margin stretch-card flex-column">
             <div class="row">
-                <h3>Edit Produksi</h3>
+                <h3>Edit BoM</h3>
             </div>
         </div>
     </div>
