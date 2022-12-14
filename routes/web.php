@@ -63,3 +63,11 @@ Route::post('/vendor/store', 'Core\VendorController@store')->name('vendor.store'
 Route::get('/vendor/edit/{id}', 'Core\VendorController@edit')->name('vendor.edit');
 Route::patch('/vendor/update/{id}', 'Core\VendorController@update')->name('vendor.update');
 Route::get('/vendor/delete/{id}', 'Core\VendorController@delete')->name('vendor.delete');
+
+// RFQ
+Route::get('/rfq', 'Core\RFQController@index')->name('rfq.index');
+Route::get('/rfq/create', 'Core\RFQController@create')->name('rfq.create');
+Route::post('/rfq/store', 'Core\RFQController@store')->name('rfq.store');
+Route::get('/rfq/edit/{id}', 'Core\RFQController@edit')->name('rfq.edit');
+Route::patch('/rfq/update/{id}', 'Core\RFQController@update')->name('rfq.update');
+Route::get('/rfq/delete/{id}', 'Core\RFQController@delete')->name('rfq.delete');

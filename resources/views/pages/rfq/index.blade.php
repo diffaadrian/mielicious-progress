@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-xl-6 grid-margin stretch-card flex-column">
             <div class="row">
-                <a href="{{route("vendor.create")}}" class="btn btn-primary btn-sm btn-icon-text mr-3 text-light text-decoration-none">
+                <a href="{{route("rfq.create")}}" class="btn btn-primary btn-sm btn-icon-text mr-3 text-light text-decoration-none">
                     Tambah
                     <i class="typcn typcn-plus btn-icon-append"></i>                          
                 </a>
@@ -21,7 +21,7 @@
                         <tr>
                             <th class="ml-5">No.</th>
                             <th>Nama Vendor</th>
-                            <th>Jenis Barang</th>
+                            <th>Referensi</th>
                             <th>Kota</th>
                             <th>Email</th>
                             <th>No Telepon</th>
@@ -32,7 +32,7 @@
                         @php
                         $no = 1;
                         @endphp
-                        @forelse ($vendors as $item)
+                        @forelse ($rfqs as $item)
                         <tr>
                             <td>#{{$no++}}</td>
                             <td>{{$item->name}}</td>
@@ -42,11 +42,11 @@
                             <td>{{$item->tlp}}</td>
                             <td>
                                 <div class="d-flex align-items-center">
-                                    <a href="{{route('vendor.edit',['id' => $item->id])}}" class="btn btn-warning btn-sm btn-icon-text mr-3">
+                                    <a href="{{route('rfq.edit',['id' => $item->id])}}" class="btn btn-warning btn-sm btn-icon-text mr-3">
                                         Edit
                                         <i class="typcn typcn-edit btn-icon-append"></i>                          
                                     </a>
-                                    <a href="{{route('vendor.delete',['id' => $item->id])}}" class="btn btn-danger btn-sm btn-icon-text mr-3">
+                                    <a href="{{route('rfq.delete',['id' => $item->id])}}" class="btn btn-danger btn-sm btn-icon-text mr-3">
                                         Delete
                                         <i class="typcn typcn-delete-outline btn-icon-append"></i>
                                     </a>

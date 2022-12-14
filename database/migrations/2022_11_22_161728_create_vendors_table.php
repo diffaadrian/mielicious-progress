@@ -16,11 +16,14 @@ class CreateVendorsTable extends Migration
         Schema::create('vendors', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->unsignedBigInteger("material_id")->nullable(); // jenis bahan baku
             $table->string('kota');
             $table->string('alamat');
             $table->string('email')->nullable();
             $table->string('tlp');
             $table->timestamps();
+
+            $table->foreign('material_id')->references('id')->on('materials');
         });
     }
 

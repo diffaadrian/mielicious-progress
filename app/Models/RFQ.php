@@ -5,16 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Vendor extends Model
+class RFQ extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        "name",
-        "material_id",
-        "kota",
-        "alamat",
-        "email",
-        "tlp",
+        "vendor_id",
+        "referensi",
+        "tanggal_order",
+        "qty",
+        "harga",
+        "total",
     ];
 }
